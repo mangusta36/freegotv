@@ -1,0 +1,13 @@
+export const faqItems = [
+  { question: "What is FreeGoTV?", answer: "FreeGoTV is an IPTV streaming service. This website brings together subscription plans, trial information, device setup guidance and a sample channel list to help you evaluate the service before subscribing." },
+  { question: "How does the free trial work?", answer: "Request a free trial from our team. No payment details are required, and we will send setup instructions for supported devices." },
+  { question: "Which devices are supported?", answer: "FreeGoTV supports major smart TVs, streaming devices, Android and iOS mobile devices, plus Windows and macOS computers." },
+  { question: "Can I use multiple devices?", answer: "Yes. Select a plan with the number of simultaneous connections your household or organization needs." },
+  { question: "How do I activate my subscription?", answer: "After confirming your plan, you receive authorized credentials and a clear installation guide for your chosen device." },
+  { question: "How can I contact support?", answer: "Use WhatsApp for FreeGoTV support, plan questions and setup help. The client area may also include account-specific communication details." },
+  { question: "What payment methods are available?", answer: "Available payment options are presented securely during the checkout process and may vary by region." },
+  { question: "Can I cancel my subscription?", answer: "You can choose not to renew at the end of your current billing period. See our refund policy for the full terms." },
+  { question: "What should I check if FreeGoTV is not working?", answer: "Check whether your device can connect to the internet, close and reopen your streaming app, and confirm that your subscription details are entered correctly. Note any error message and whether the issue affects one channel or all channels. These checks do not confirm a service outage; never share your password in a public support request." },
+  { question: "What is an EPG?", answer: "EPG stands for electronic program guide: a schedule of shows and start times. Guide information can differ by channel and app. If times look incorrect, check your device's time zone; an empty guide alone does not establish that the streaming service is down." },
+  { question: "Does the sample channel list confirm availability in the United States?", answer: "No. The channel explorer is a demonstration, not a confirmed subscription lineup. Before subscribing, confirm availability for your location, chosen plan and specific channels. A country label in the sample list is not a guarantee of access in that country." },
+];

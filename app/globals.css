@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff1744;
+  --primary-dark: #d9143d;
+  --primary-action: #d9143d;
+  --primary-action-hover: #b51034;
+  --ink: #111111;
+  --ink-soft: #1a151a;
+  --paper: #ffffff;
+  --mist: #f7f7f8;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: Arial, Helvetica, sans-serif; }
+::selection { background: #ffd8e0; color: #111; }
+
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--primary-dark);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8; }
+  .section-space { @apply py-16 sm:py-20 lg:py-28; }
+  .eyebrow { @apply inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50 px-3 py-1.5 text-xs font-bold tracking-[0.14em] text-red-700; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2; }
+  .btn-primary { @apply btn bg-[var(--primary-action)] text-white shadow-lg shadow-red-500/25 hover:-translate-y-0.5 hover:bg-[var(--primary-action-hover)]; }
+  .btn-secondary { @apply btn bg-white text-zinc-950 shadow-soft hover:-translate-y-0.5 hover:bg-zinc-100; }
+  .btn-outline { @apply btn border border-zinc-300 bg-white text-zinc-950 hover:-translate-y-0.5 hover:border-zinc-950; }
+  .btn-ghost { @apply btn text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950; }
+  .card { @apply rounded-3xl border border-zinc-200 bg-white shadow-soft; }
+  .grid-glow { background-image: radial-gradient(circle at 18% 9%, rgb(255 23 68 / .26), transparent 25rem), radial-gradient(circle at 88% 94%, rgb(255 64 129 / .15), transparent 23rem); }
+}
+
+.hero-noise { background-image: linear-gradient(rgb(255 255 255 / 0.05) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 0.05) 1px, transparent 1px); background-size: 46px 46px; }
+.text-gradient { background: linear-gradient(90deg, #ff1744, #ff718b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.red-ring { box-shadow: 0 0 0 1px rgb(255 23 68 / .2), 0 18px 50px -21px rgb(255 23 68 / .75); }
+
+@media (max-width: 370px) { .container-page { padding-left: 1rem; padding-right: 1rem; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

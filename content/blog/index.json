@@ -1,0 +1,205 @@
+[
+  {
+    "slug": "iptv-technology-explained",
+    "title": "IPTV Technology Explained: From Source to Screen",
+    "description": "Understand IPTV delivery, encoding, buffering and live delay. Learn which parts belong to the network, player and provider before evaluating a service.",
+    "primaryKeyword": "IPTV technology explained",
+    "secondaryKeywords": [
+      "how IPTV works",
+      "live streaming delivery",
+      "IPTV vs cable"
+    ],
+    "intent": "Understand the delivery chain and its limits",
+    "category": "Technology",
+    "published": "2026-09-23",
+    "related": [
+      "iptv-players-and-apps",
+      "streaming-video-quality"
+    ]
+  },
+  {
+    "slug": "streaming-device-compatibility",
+    "title": "Streaming Device Compatibility: Check Before You Buy",
+    "description": "Check streaming-device compatibility across apps, model generations, codecs, displays and audio equipment without assuming every device supports every service.",
+    "primaryKeyword": "streaming device compatibility",
+    "secondaryKeywords": [
+      "IPTV devices",
+      "Fire TV compatibility",
+      "Roku streaming",
+      "Apple TV apps"
+    ],
+    "intent": "Determine whether an existing or prospective device fits a service",
+    "category": "Devices",
+    "published": "2026-09-23",
+    "related": [
+      "iptv-players-and-apps",
+      "streaming-video-quality"
+    ]
+  },
+  {
+    "slug": "safe-iptv-setup-checklist",
+    "title": "A Safe IPTV Setup Checklist for Your First Stream",
+    "description": "Prepare an authorized streaming setup, find the correct app, protect credentials and verify your first stream with a practical, reversible checklist.",
+    "primaryKeyword": "IPTV setup checklist",
+    "secondaryKeywords": [
+      "streaming app installation",
+      "IPTV credentials",
+      "first stream setup"
+    ],
+    "intent": "Complete a safe initial setup without invented provider procedures",
+    "category": "Setup",
+    "published": "2026-09-23",
+    "related": [
+      "streaming-device-compatibility",
+      "streaming-error-troubleshooting"
+    ]
+  },
+  {
+    "slug": "iptv-buffering-troubleshooting",
+    "title": "IPTV Buffering: Diagnose Network Problems Step by Step",
+    "description": "Diagnose IPTV buffering with controlled Wi-Fi, Ethernet and household-load comparisons. Learn what a speed test can—and cannot—tell you.",
+    "primaryKeyword": "IPTV buffering troubleshooting",
+    "secondaryKeywords": [
+      "streaming pauses",
+      "Wi-Fi interference",
+      "bandwidth testing"
+    ],
+    "intent": "Isolate stalls during otherwise working playback",
+    "category": "Network",
+    "published": "2026-09-23",
+    "related": [
+      "streaming-data-usage",
+      "streaming-error-troubleshooting"
+    ]
+  },
+  {
+    "slug": "electronic-program-guide-explained",
+    "title": "Electronic Program Guides: Channels, Schedules and Time Zones",
+    "description": "Learn how electronic program guides connect channels to schedules, handle time zones and fail independently of video playback.",
+    "primaryKeyword": "electronic program guide explained",
+    "secondaryKeywords": [
+      "EPG missing data",
+      "channel guide",
+      "XMLTV time zones"
+    ],
+    "intent": "Interpret guide data and resolve schedule mismatches",
+    "category": "Program guides",
+    "published": "2026-09-23",
+    "related": [
+      "iptv-technology-explained",
+      "streaming-error-troubleshooting"
+    ]
+  },
+  {
+    "slug": "iptv-players-and-apps",
+    "title": "IPTV Players and Apps: What They Do—and Do Not Provide",
+    "description": "Understand IPTV players, playlists and streaming services. Compare software capabilities, account requirements and permissions without confusing apps with content.",
+    "primaryKeyword": "IPTV players and apps",
+    "secondaryKeywords": [
+      "media player vs provider",
+      "playlists",
+      "M3U",
+      "streaming formats"
+    ],
+    "intent": "Understand the software/service boundary before installing or paying",
+    "category": "Apps",
+    "published": "2026-09-23",
+    "related": [
+      "safe-iptv-setup-checklist",
+      "streaming-device-compatibility"
+    ]
+  },
+  {
+    "slug": "evaluate-streaming-service",
+    "title": "How to Evaluate a Streaming Service Before Subscribing",
+    "description": "Build a useful streaming-service trial: check access, devices, connection limits, terms and support evidence before making a subscription decision.",
+    "primaryKeyword": "how to evaluate a streaming service",
+    "secondaryKeywords": [
+      "IPTV trial checklist",
+      "subscription evaluation",
+      "connection limits"
+    ],
+    "intent": "Design a trial and evidence-based decision",
+    "category": "Evaluation",
+    "published": "2026-09-23",
+    "related": [
+      "streaming-device-compatibility",
+      "electronic-program-guide-explained"
+    ]
+  },
+  {
+    "slug": "streaming-error-troubleshooting",
+    "title": "Streaming Errors: Diagnose Sign-In, Black Screens and App Failures",
+    "description": "Troubleshoot streaming sign-in errors, black screens, missing audio and app crashes with safe checks and a clear support report.",
+    "primaryKeyword": "streaming error troubleshooting",
+    "secondaryKeywords": [
+      "streaming login error",
+      "black screen",
+      "app crashes",
+      "playback error"
+    ],
+    "intent": "Triage discrete failures before playback or in the app",
+    "category": "Troubleshooting",
+    "published": "2026-09-23",
+    "related": [
+      "iptv-buffering-troubleshooting",
+      "safe-iptv-setup-checklist"
+    ]
+  },
+  {
+    "slug": "streaming-data-usage",
+    "title": "Streaming Data Usage: Plan for Caps and Multiple Screens",
+    "description": "Estimate streaming data usage from bitrate and viewing hours, compare household scenarios and check your provider's meter without guessing service requirements.",
+    "primaryKeyword": "streaming data usage",
+    "secondaryKeywords": [
+      "streaming GB per hour",
+      "household bandwidth",
+      "data cap planning"
+    ],
+    "intent": "Estimate data consumption and plan household usage",
+    "category": "Planning",
+    "published": "2026-09-23",
+    "related": [
+      "iptv-buffering-troubleshooting",
+      "streaming-video-quality"
+    ]
+  },
+  {
+    "slug": "streaming-video-quality",
+    "title": "Streaming Video Quality: Resolution, Bitrate, HDR and Codecs",
+    "description": "Understand streaming resolution, bitrate, frame rate, HDR and codecs, then evaluate the full path from source to television.",
+    "primaryKeyword": "streaming video quality",
+    "secondaryKeywords": [
+      "4K streaming",
+      "bitrate vs resolution",
+      "HDR compatibility",
+      "video codecs"
+    ],
+    "intent": "Explain picture-quality tradeoffs without promising 4K",
+    "category": "Picture quality",
+    "published": "2026-09-23",
+    "related": [
+      "streaming-device-compatibility",
+      "streaming-data-usage"
+    ]
+  },
+  {
+    "slug": "how-to-pay-for-freegotv-renewal",
+    "title": "How to Pay for FreeGoTV and Renew Your Subscription",
+    "description": "Learn how to pay for FreeGoTV or renew a FreeGoTV subscription through support, what details to prepare, and how to confirm the right plan before paying.",
+    "primaryKeyword": "how to pay for FreeGoTV renewal",
+    "secondaryKeywords": [
+      "how to pay for FreeGoTV",
+      "FreeGoTV payment",
+      "FreeGoTV renewal",
+      "FreeGoTV subscription"
+    ],
+    "intent": "Help existing and prospective customers renew or ask payment questions safely",
+    "category": "Payment",
+    "published": "2026-09-26",
+    "related": [
+      "evaluate-streaming-service",
+      "safe-iptv-setup-checklist"
+    ]
+  }
+]
