@@ -8,6 +8,14 @@
     "text": "For official navigation, start at [FreeGoTV](/), review current [FreeGoTV pricing](/pricing), and contact support through WhatsApp when you are ready to ask about payment or renewal. A useful message is: Hello, I would like help renewing my FreeGoTV subscription. Keep the message simple at first. You do not need to send full passwords, payment screenshots, or private account details in the opening message."
   },
   {
+    "type": "image",
+    "src": "/images/blog/freegotv-renewal-preparation.webp",
+    "alt": "FreeGoTV renewal preparation diagram for plan devices support payment path and record",
+    "width": 1200,
+    "height": 675,
+    "caption": "Renewal is clearer when plan, devices, support path and record keeping are prepared first."
+  },
+  {
     "type": "h2",
     "id": "quick-answer",
     "text": "Quick answer: how to pay for FreeGoTV renewal"
@@ -55,6 +63,42 @@
     "type": "h2",
     "id": "renewal-steps",
     "text": "A practical FreeGoTV renewal checklist"
+  },
+  {
+    "type": "table",
+    "caption": "Use this before sending a payment or renewal request so support can confirm the right path.",
+    "headers": [
+      "Before renewal",
+      "What to verify",
+      "Why"
+    ],
+    "rows": [
+      [
+        "Plan and duration",
+        "Check current pricing and decide the billing period you want.",
+        "Support can confirm the amount more easily when the plan is specific."
+      ],
+      [
+        "Device count",
+        "Decide how many simultaneous connections you need.",
+        "A renewal should match how the household watches now, not last year."
+      ],
+      [
+        "Official support path",
+        "Start from the FreeGoTV website or official WhatsApp route.",
+        "It reduces the risk of old numbers, copied payment links, or unofficial instructions."
+      ],
+      [
+        "Privacy boundaries",
+        "Prepare only non-sensitive details such as device type and plan preference.",
+        "You should not send passwords, full payment details, or private screenshots by default."
+      ],
+      [
+        "Renewal record",
+        "Keep the selected plan, date, and support confirmation in a private note.",
+        "A simple record makes future renewals and household support questions easier."
+      ]
+    ]
   },
   {
     "type": "p",

@@ -8,9 +8,59 @@
     "text": "This guide helps you diagnose sign-in errors, black screens, app crashes, missing audio, and playback failures without exposing private credentials or making unsupported assumptions about a provider. It complements the public [FAQ](/faq), [installation guide](/install), and [FreeGoTV](/) homepage, but it is general technical guidance rather than a live status page."
   },
   {
+    "type": "image",
+    "src": "/images/blog/streaming-error-diagnosis-tree.webp",
+    "alt": "Streaming error diagnosis tree for sign-in app network playback and reporting",
+    "width": 1200,
+    "height": 675,
+    "caption": "Classifying the error first prevents random changes from hiding the real symptom."
+  },
+  {
     "type": "h2",
     "id": "capture-the-symptom",
     "text": "Capture the symptom before fixing it"
+  },
+  {
+    "type": "table",
+    "caption": "Start with the symptom category, then run the smallest safe test before changing settings.",
+    "headers": [
+      "Symptom",
+      "Possible cause",
+      "First test",
+      "Next step"
+    ],
+    "rows": [
+      [
+        "Cannot sign in",
+        "Expired access, typo, wrong app, or account issue.",
+        "Re-enter credentials carefully and confirm renewal/account status through official support.",
+        "Send the exact message and device/app details if sign-in still fails."
+      ],
+      [
+        "Black screen with audio",
+        "Video decoding, HDMI/display mode, or app rendering problem.",
+        "Try another channel and check display/HDR settings without changing account details.",
+        "Report whether audio, guide, and controls still appear."
+      ],
+      [
+        "No audio",
+        "Muted output, wrong audio track, receiver setting, or app issue.",
+        "Check device volume, TV/receiver input, and alternate audio track if available.",
+        "Compare another app or channel before reinstalling."
+      ],
+      [
+        "App crashes",
+        "App version, device storage, cache, or operating-system issue.",
+        "Restart the app/device and check available updates.",
+        "Record app version and crash timing for support."
+      ],
+      [
+        "Playback error code",
+        "Network request, account, stream, or format issue.",
+        "Write down the exact code and test one known-good channel.",
+        "Share the code, time, device, app, and whether other channels work."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -230,11 +280,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "Error report worksheet"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Capture the error before changing settings"
   },
   {
     "type": "p",
@@ -254,7 +304,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Send a useful report without private data"
   },
   {
     "type": "p",
@@ -275,7 +325,7 @@
   {
     "type": "h2",
     "id": "final-preflight-check",
-    "text": "Final preflight check"
+    "text": "Check the smallest safe fix first"
   },
   {
     "type": "p",
@@ -284,11 +334,24 @@
   {
     "type": "h2",
     "id": "one-more-check",
-    "text": "One more check"
+    "text": "Confirm whether renewal status could explain the error"
   },
   {
     "type": "p",
     "text": "If the same error returns after a temporary fix, treat the temporary fix as evidence rather than success. For example, if restarting the device helps for one hour and then the app freezes again, the pattern may involve memory, heat, cache, or a background update. If re-entering credentials helps only until the device sleeps, saved-session handling may be involved. These repeat patterns are often more useful than the original failure because they show how the system behaves over time. Add them to the timeline and avoid escalating as if every incident were brand new."
+  },
+  {
+    "type": "h2",
+    "id": "check-account-status-without-exposing-private-details",
+    "text": "Check account status without exposing private details"
+  },
+  {
+    "type": "p",
+    "text": "Some errors that look technical are really account-state questions. An expired subscription, changed plan, mistyped activation detail, or wrong app path can produce login failures, empty lists, or authorization messages. Before reinstalling everything, confirm whether the account should currently be active. For FreeGoTV-specific renewal questions, the [renewal payment guide](/blog/how-to-pay-for-freegotv-renewal) explains what to prepare without sending unnecessary private information."
+  },
+  {
+    "type": "p",
+    "text": "When contacting support, do not paste passwords, full payment details, or complete activation messages into a broad report. Start with the symptom, device, app, approximate time, and whether you believe the subscription is active. If support needs a specific identifier, provide only the limited detail requested through the official route."
   },
   {
     "type": "h2",
@@ -322,7 +385,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: report the symptom, not a guess"
   },
   {
     "type": "h3",

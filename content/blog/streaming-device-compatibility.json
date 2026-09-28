@@ -8,9 +8,53 @@
     "text": "The useful question is not “Which device is best for IPTV?” It is “Which documented combination of service, app, model, network, display, and controls meets my household's needs?” This guide gives you a way to answer that question without assuming support from a brand name. Platform examples describe general ecosystem differences, not confirmed FreeGoTV compatibility or hands-on product testing."
   },
   {
+    "type": "image",
+    "src": "/images/blog/streaming-device-compatibility-map.webp",
+    "alt": "Streaming device compatibility map showing device app network display and audio checks",
+    "width": 1200,
+    "height": 675,
+    "caption": "Compatibility is a chain. A failure in one link can make a suitable device feel unsupported."
+  },
+  {
     "type": "h2",
     "id": "treat-compatibility-as-a-chain",
     "text": "Treat compatibility as a chain"
+  },
+  {
+    "type": "table",
+    "caption": "No row guarantees support for a specific service; it shows what to verify for each device category.",
+    "headers": [
+      "Device type",
+      "App availability",
+      "Network considerations",
+      "Setup considerations"
+    ],
+    "rows": [
+      [
+        "Smart TV",
+        "Check the exact app store and model year instead of assuming all smart TVs match.",
+        "Wi-Fi performance can vary by room, chipset, and distance from the router.",
+        "Remote text entry and updates may be slower than on a dedicated streamer."
+      ],
+      [
+        "Streaming stick or box",
+        "Often has broad app selection, but each platform still has its own rules.",
+        "Small devices may depend heavily on Wi-Fi quality unless an Ethernet adapter is supported.",
+        "Confirm storage, app updates, account sign-in, and display settings before buying."
+      ],
+      [
+        "Phone or tablet",
+        "App access may be easier, but casting or TV playback is a separate compatibility question.",
+        "Mobile data, hotspots, and home Wi-Fi behave differently during long viewing.",
+        "Test screen controls, captions, battery use, and whether the household wants handheld viewing."
+      ],
+      [
+        "Computer browser or app",
+        "Can be useful for testing, but it may not represent living-room use.",
+        "Wired Ethernet is easier to test and compare against Wi-Fi.",
+        "Check browser compatibility, audio output, and whether full-screen playback is comfortable."
+      ]
+    ]
   },
   {
     "type": "p",

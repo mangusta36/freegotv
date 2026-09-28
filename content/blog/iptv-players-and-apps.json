@@ -8,9 +8,53 @@
     "text": "Understanding this boundary prevents unsafe downloads and disappointed purchases. This guide explains what IPTV players and apps usually do, what they do not provide by themselves, and how to evaluate permissions, playlists, formats, and updates. It describes general software concepts and does not invent an official FreeGoTV app. For brand-level context, visit [FreeGoTV](/) or the [installation page](/install)."
   },
   {
+    "type": "image",
+    "src": "/images/blog/iptv-player-provider-boundary.webp",
+    "alt": "Diagram separating IPTV player playlist provider account and support responsibilities",
+    "width": 1200,
+    "height": 675,
+    "caption": "The boundary between player software and service access is the most important setup distinction."
+  },
+  {
     "type": "h2",
     "id": "separate-the-player-from-the-service",
     "text": "Separate the player from the service"
+  },
+  {
+    "type": "table",
+    "caption": "This comparison keeps software capability separate from service access and billing.",
+    "headers": [
+      "Layer",
+      "What it does",
+      "What it does not provide by itself"
+    ],
+    "rows": [
+      [
+        "IPTV player app",
+        "Opens supported playlist or account inputs, decodes streams, and displays playback controls.",
+        "It does not automatically include channels, billing, support, or legal authorization."
+      ],
+      [
+        "Playlist or portal details",
+        "Tell the player where to request streams and guide data.",
+        "They do not guarantee device compatibility, account status, or content availability."
+      ],
+      [
+        "Streaming provider/service",
+        "Manages subscription access, support path, plan terms, and service-specific guidance.",
+        "It may not control every third-party player interface or device limitation."
+      ],
+      [
+        "App store listing",
+        "Shows that software may be installable on a platform.",
+        "It does not prove a specific provider account, playlist, or feature will work."
+      ],
+      [
+        "Viewer setup",
+        "Combines device, app, credentials, network, and display settings.",
+        "It should not rely on guessed settings or credentials from unofficial sources."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -230,11 +274,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "Player selection worksheet"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Record the player and provider boundary"
   },
   {
     "type": "p",
@@ -254,7 +298,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Protect playlist and account details"
   },
   {
     "type": "p",
@@ -275,11 +319,24 @@
   {
     "type": "h2",
     "id": "final-preflight-check",
-    "text": "Final preflight check"
+    "text": "Confirm the app boundary before choosing a player"
   },
   {
     "type": "p",
     "text": "For app selection, keep a final comparison table with these columns: app name, developer, platform, access method, content-included statement, permissions, update recency, guide support, and household usability. Fill it from store listings and provider documentation, not from assumptions. The table quickly reveals whether two apps are actually alternatives or simply share similar marketing words. It also prevents paying for a player twice because one person forgot which app already worked. If you later contact support, the table shows that you installed the intended software and can identify the exact version. That clarity matters when app stores contain look-alike names, old forks, or unrelated players."
+  },
+  {
+    "type": "h2",
+    "id": "test-the-player-without-blaming-the-provider-first",
+    "text": "Test the player without blaming the provider first"
+  },
+  {
+    "type": "p",
+    "text": "When playback fails inside a player, the provider is not always the first layer to blame. The app may have outdated permissions, unsupported decoder settings, a bad cache, or a playlist field entered incorrectly. Run a controlled check: confirm the app version, re-check the account input exactly as provided, test one known working stream or category, and compare another device if available. If the same account behaves differently across players, the app layer deserves attention."
+  },
+  {
+    "type": "p",
+    "text": "At the same time, do not expect a player developer to solve account billing, channel availability, renewal status, or service-side guide data. A support request should identify the player and the provider separately. That wording helps everyone avoid circular answers where the app store points to the provider and the provider receives no usable detail about the app environment."
   },
   {
     "type": "h2",
@@ -313,7 +370,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: choose software with clear responsibilities"
   },
   {
     "type": "h3",

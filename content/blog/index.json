@@ -15,12 +15,14 @@
     "related": [
       "iptv-players-and-apps",
       "streaming-video-quality"
-    ]
+    ],
+    "seoTitle": "IPTV Technology Explained: Source to Screen",
+    "modified": "2026-09-28"
   },
   {
     "slug": "streaming-device-compatibility",
     "title": "Streaming Device Compatibility: Check Before You Buy",
-    "description": "Check streaming-device compatibility across apps, model generations, codecs, displays and audio equipment without assuming every device supports every service.",
+    "description": "Check streaming device compatibility across apps, codecs, displays and network needs before you choose hardware or a service.",
     "primaryKeyword": "streaming device compatibility",
     "secondaryKeywords": [
       "IPTV devices",
@@ -34,7 +36,9 @@
     "related": [
       "iptv-players-and-apps",
       "streaming-video-quality"
-    ]
+    ],
+    "seoTitle": "Streaming Device Compatibility Guide",
+    "modified": "2026-09-28"
   },
   {
     "slug": "safe-iptv-setup-checklist",
@@ -52,7 +56,9 @@
     "related": [
       "streaming-device-compatibility",
       "streaming-error-troubleshooting"
-    ]
+    ],
+    "seoTitle": "Safe IPTV Setup Checklist",
+    "modified": "2026-09-28"
   },
   {
     "slug": "iptv-buffering-troubleshooting",
@@ -70,7 +76,9 @@
     "related": [
       "streaming-data-usage",
       "streaming-error-troubleshooting"
-    ]
+    ],
+    "seoTitle": "IPTV Buffering Troubleshooting Steps",
+    "modified": "2026-09-28"
   },
   {
     "slug": "electronic-program-guide-explained",
@@ -88,12 +96,14 @@
     "related": [
       "iptv-technology-explained",
       "streaming-error-troubleshooting"
-    ]
+    ],
+    "seoTitle": "Electronic Program Guide Troubleshooting",
+    "modified": "2026-09-28"
   },
   {
     "slug": "iptv-players-and-apps",
     "title": "IPTV Players and Apps: What They Do—and Do Not Provide",
-    "description": "Understand IPTV players, playlists and streaming services. Compare software capabilities, account requirements and permissions without confusing apps with content.",
+    "description": "Understand IPTV players, playlists and providers so you know what an app can do, what it cannot provide and what to verify before setup.",
     "primaryKeyword": "IPTV players and apps",
     "secondaryKeywords": [
       "media player vs provider",
@@ -107,7 +117,9 @@
     "related": [
       "safe-iptv-setup-checklist",
       "streaming-device-compatibility"
-    ]
+    ],
+    "seoTitle": "IPTV Players and Apps Explained",
+    "modified": "2026-09-28"
   },
   {
     "slug": "evaluate-streaming-service",
@@ -125,7 +137,9 @@
     "related": [
       "streaming-device-compatibility",
       "electronic-program-guide-explained"
-    ]
+    ],
+    "seoTitle": "Evaluate a Streaming Service",
+    "modified": "2026-09-28"
   },
   {
     "slug": "streaming-error-troubleshooting",
@@ -144,12 +158,14 @@
     "related": [
       "iptv-buffering-troubleshooting",
       "safe-iptv-setup-checklist"
-    ]
+    ],
+    "seoTitle": "Streaming Error Troubleshooting Guide",
+    "modified": "2026-09-28"
   },
   {
     "slug": "streaming-data-usage",
     "title": "Streaming Data Usage: Plan for Caps and Multiple Screens",
-    "description": "Estimate streaming data usage from bitrate and viewing hours, compare household scenarios and check your provider's meter without guessing service requirements.",
+    "description": "Estimate streaming data usage from bitrate, hours and screens, then compare household scenarios and provider meter results.",
     "primaryKeyword": "streaming data usage",
     "secondaryKeywords": [
       "streaming GB per hour",
@@ -162,7 +178,9 @@
     "related": [
       "iptv-buffering-troubleshooting",
       "streaming-video-quality"
-    ]
+    ],
+    "seoTitle": "Streaming Data Usage Guide",
+    "modified": "2026-09-28"
   },
   {
     "slug": "streaming-video-quality",
@@ -181,7 +199,9 @@
     "related": [
       "streaming-device-compatibility",
       "streaming-data-usage"
-    ]
+    ],
+    "seoTitle": "Streaming Video Quality Guide",
+    "modified": "2026-09-28"
   },
   {
     "slug": "how-to-pay-for-freegotv-renewal",
@@ -200,6 +220,8 @@
     "related": [
       "evaluate-streaming-service",
       "safe-iptv-setup-checklist"
-    ]
+    ],
+    "seoTitle": "FreeGoTV Renewal Payment Guide",
+    "modified": "2026-09-28"
   }
 ]

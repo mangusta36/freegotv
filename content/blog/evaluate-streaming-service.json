@@ -8,9 +8,59 @@
     "text": "This guide gives US viewers an evidence-based way to evaluate a streaming service before subscribing. It avoids fake reviews, unsupported rankings, and invented performance claims. Use it with the provider's own documents and your own trial notes. For verified FreeGoTV navigation, start at [FreeGoTV](/), then compare the public [pricing](/pricing), [free trial](/free-trial), and [refund policy](/refund) pages."
   },
   {
+    "type": "image",
+    "src": "/images/blog/streaming-service-evaluation-matrix.webp",
+    "alt": "Streaming service evaluation matrix for requirements trial terms support and decision",
+    "width": 1200,
+    "height": 675,
+    "caption": "A trial becomes more useful when evidence is organized before payment."
+  },
+  {
     "type": "h2",
     "id": "write-your-requirements-first",
     "text": "Write your requirements before testing"
+  },
+  {
+    "type": "table",
+    "caption": "The matrix is not a numeric ranking; it keeps evidence tied to the household requirement.",
+    "headers": [
+      "Criterion",
+      "What to test",
+      "Positive signal",
+      "Warning sign"
+    ],
+    "rows": [
+      [
+        "Device fit",
+        "Install and use the service on the actual primary screen.",
+        "Setup path is documented and works without unusual workarounds.",
+        "Only a different test device works or support cannot confirm your model."
+      ],
+      [
+        "Normal viewing",
+        "Watch during the time and network conditions you actually use.",
+        "Playback, guide, audio, and controls remain usable beyond a quick launch.",
+        "The trial only works under ideal conditions that do not match daily use."
+      ],
+      [
+        "Terms and renewal",
+        "Read plan, trial, refund, and renewal information before payment.",
+        "Written terms match the way you intend to subscribe or renew.",
+        "Important conditions are unclear or only described in vague chat messages."
+      ],
+      [
+        "Support quality",
+        "Ask one realistic, specific setup or plan question.",
+        "The answer is specific, safe, and consistent with public pages.",
+        "The response pressures payment or avoids direct compatibility questions."
+      ],
+      [
+        "Decision record",
+        "Write pass, fail, untested, and open questions for must-haves.",
+        "The final decision follows evidence rather than a single impression.",
+        "A major requirement remains untested but is treated as confirmed."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -230,11 +280,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "Subscription trial scorecard"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Record trial evidence before payment"
   },
   {
     "type": "p",
@@ -254,7 +304,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Keep trial notes private and shareable"
   },
   {
     "type": "p",
@@ -275,11 +325,24 @@
   {
     "type": "h2",
     "id": "final-preflight-check",
-    "text": "Final preflight check"
+    "text": "Review the trial record before subscribing"
   },
   {
     "type": "p",
     "text": "Before subscribing, perform one quiet review of your notes away from the television. Ask whether each must-have passed, whether any failure has a credible fix, whether the written terms match your intended use, and whether support answered the questions that mattered. Do not let a single exciting feature compensate for a failed requirement that the household will encounter every day. Also do not reject a service for a minor preference if the essentials are strong and documented. The value of an evaluation process is balance: it protects you from hype, but it also protects you from overreacting to one harmless imperfection. Make the decision from the whole record."
+  },
+  {
+    "type": "h2",
+    "id": "connect-evaluation-to-renewal-risk",
+    "text": "Connect evaluation notes to renewal risk"
+  },
+  {
+    "type": "p",
+    "text": "A good trial record also makes future renewal decisions easier. If you subscribe, keep the same scorecard with the plan duration, device count, support path, and open questions. When renewal time arrives, you can compare what changed instead of starting from memory. If you need renewal-specific preparation, use the [FreeGoTV renewal payment guide](/blog/how-to-pay-for-freegotv-renewal) after the service evaluation is complete."
+  },
+  {
+    "type": "p",
+    "text": "This is especially useful when a household grows from one screen to several, replaces a streaming device, or begins watching more live events. A service that fit the original trial may still need a plan or setup review later. Treat renewal as a quick re-check of requirements, not just a payment action."
   },
   {
     "type": "h2",
@@ -313,7 +376,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: turn the trial into a clear decision"
   },
   {
     "type": "h3",

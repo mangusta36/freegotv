@@ -8,9 +8,59 @@
     "text": "This guide explains those moving parts without promising a particular FreeGoTV resolution or performance level. It is written for viewers who want to evaluate picture quality realistically and troubleshoot visible problems with evidence. For verified brand navigation, use [FreeGoTV](/), and for device questions pair this guide with [streaming device compatibility](/blog/streaming-device-compatibility)."
   },
   {
+    "type": "image",
+    "src": "/images/blog/streaming-video-quality-factors.webp",
+    "alt": "Streaming video quality factors diagram for resolution bitrate motion HDR and codec",
+    "width": 1200,
+    "height": 675,
+    "caption": "Picture quality depends on several linked factors, not resolution alone."
+  },
+  {
     "type": "h2",
     "id": "resolution-is-only-one-part",
     "text": "Resolution is only one part of quality"
+  },
+  {
+    "type": "table",
+    "caption": "The table explains relationships, not universal requirements for every service or device.",
+    "headers": [
+      "Concept",
+      "Typical use",
+      "Bitrate considerations",
+      "HDR/codec considerations"
+    ],
+    "rows": [
+      [
+        "Resolution",
+        "Defines pixel dimensions such as HD or 4K.",
+        "Higher resolution often needs more bitrate, but poor compression can still look soft.",
+        "Resolution does not guarantee HDR, color accuracy, or a modern codec."
+      ],
+      [
+        "Bitrate",
+        "Controls how much data is available to describe the picture over time.",
+        "Too little bitrate can cause blockiness, banding, or detail loss during motion.",
+        "Efficient codecs may look better at the same bitrate than older codecs."
+      ],
+      [
+        "Frame rate and motion",
+        "Affects sports, fast camera movement, and smoothness.",
+        "Fast motion can reveal compression limits even when static scenes look sharp.",
+        "Device and display settings can change how motion is processed."
+      ],
+      [
+        "HDR and color",
+        "Expands brightness and color when the whole path supports it.",
+        "HDR streams can need careful encoding and compatible display settings.",
+        "Unsupported HDR may appear washed out or be converted to SDR."
+      ],
+      [
+        "Device decoding",
+        "Turns the stream into picture and sound on the screen.",
+        "A network can be fine while an older device struggles with a format.",
+        "Codec support, HDMI path, and TV settings all affect final output."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -230,11 +280,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "Picture quality review worksheet"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Record quality evidence before changing settings"
   },
   {
     "type": "p",
@@ -254,7 +304,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Share quality notes without account details"
   },
   {
     "type": "p",
@@ -275,7 +325,7 @@
   {
     "type": "h2",
     "id": "final-preflight-check",
-    "text": "Final preflight check"
+    "text": "Check the full picture path before blaming resolution"
   },
   {
     "type": "p",
@@ -284,7 +334,7 @@
   {
     "type": "h2",
     "id": "one-more-check",
-    "text": "One more check"
+    "text": "Confirm whether the display path limits quality"
   },
   {
     "type": "p",
@@ -297,6 +347,19 @@
   {
     "type": "p",
     "text": "Use that repeat test before replacing equipment, because it can save money and preserve a setup that already works well enough."
+  },
+  {
+    "type": "h2",
+    "id": "use-a-repeatable-quality-check",
+    "text": "Use a repeatable quality check"
+  },
+  {
+    "type": "p",
+    "text": "Quality complaints are easier to evaluate when the scene and settings are repeatable. Choose one familiar program or channel, watch the same type of motion, and note the device, display mode, network path, and time of day. Then change one factor at a time. If switching from Wi-Fi to Ethernet improves stability but not sharpness, the remaining issue may be source quality, encoding, device decoding, or TV processing rather than raw bandwidth."
+  },
+  {
+    "type": "p",
+    "text": "Avoid judging quality from a single label such as HD, 4K, or HDR. Those labels describe only part of the path. A useful report says what you saw: softness during motion, blocky shadows, washed-out HDR, audio sync drift, or captions that lag. Specific observations make it possible to separate service behavior from local display settings."
   },
   {
     "type": "h2",
@@ -330,7 +393,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: judge the whole video chain"
   },
   {
     "type": "h3",

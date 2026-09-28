@@ -8,9 +8,59 @@
     "text": "The productive response is controlled testing. This guide gives you a step-by-step IPTV buffering troubleshooting process for US households without pretending a single speed-test number explains everything. It describes general network diagnosis, not a live FreeGoTV outage check or a guarantee about any specific stream. For brand navigation and current public pages, start with [FreeGoTV](/)."
   },
   {
+    "type": "image",
+    "src": "/images/blog/iptv-buffering-diagnosis-flow.webp",
+    "alt": "IPTV buffering diagnosis flow from symptom to support note",
+    "width": 1200,
+    "height": 675,
+    "caption": "A buffering diagnosis works best when each variable is tested separately."
+  },
+  {
     "type": "h2",
     "id": "define-the-buffering-symptom",
     "text": "Define the buffering symptom before changing settings"
+  },
+  {
+    "type": "table",
+    "caption": "Use one row at a time so the test result points to the next sensible action.",
+    "headers": [
+      "Symptom",
+      "Likely area to investigate",
+      "Test",
+      "Next action"
+    ],
+    "rows": [
+      [
+        "Pauses only on Wi-Fi",
+        "Wireless signal, interference, or router placement.",
+        "Move closer to the router or compare with a wired connection.",
+        "Improve Wi-Fi placement or keep the main device on Ethernet if available."
+      ],
+      [
+        "Pauses on every device",
+        "Internet connection, household load, or upstream delivery.",
+        "Test during a quiet household period and compare another app or stream type.",
+        "Record timing and contact support if the pattern persists."
+      ],
+      [
+        "Starts fine then degrades",
+        "Buffer exhaustion, heat, app memory, or changing bitrate.",
+        "Restart the app, test a shorter session, and check device ventilation.",
+        "Update the app/device and document when degradation begins."
+      ],
+      [
+        "Only one channel buffers",
+        "Channel source, guide mapping, or stream-specific issue.",
+        "Compare nearby channels and note exact channel name and time.",
+        "Send a precise support report instead of changing home network settings."
+      ],
+      [
+        "Speed test looks good but stream pauses",
+        "Speed test path may not match streaming path or Wi-Fi may fluctuate.",
+        "Compare Ethernet, Wi-Fi, time of day, and household usage.",
+        "Use the controlled comparison as evidence rather than relying on one number."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -230,11 +280,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "Buffering test notes to keep"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Record the playback pattern before changing equipment"
   },
   {
     "type": "p",
@@ -254,7 +304,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Share only the details support needs"
   },
   {
     "type": "p",
@@ -271,6 +321,19 @@
   {
     "type": "p",
     "text": "Finally, connect this worksheet to the rest of your streaming decision. Buffering notes should show whether the issue follows the device, the network path, the time of day, or a specific stream. If you need broader context, use the data-usage guide and the streaming-error troubleshooting article. The best streaming setup is not the one with the most undocumented tweaks; it is the one whose requirements, limits, and recovery steps are understood by the people who use it."
+  },
+  {
+    "type": "h2",
+    "id": "compare-short-and-long-sessions",
+    "text": "Compare short tests with real viewing sessions"
+  },
+  {
+    "type": "p",
+    "text": "A five-minute test can miss problems that appear only after a device warms up, an app cache fills, or a household starts using more bandwidth. Run one short startup check and one normal-length viewing check. If the short test passes but the longer session fails, record the time when pauses begin, the channel category, and whether the device feels unusually warm. That pattern points somewhere different from a stream that fails immediately."
+  },
+  {
+    "type": "p",
+    "text": "Also separate repeatable problems from random ones. A repeatable pause every evening around the same time can indicate household contention or ISP congestion. A single pause during a live event may be harder to diagnose without more examples. The most useful support note explains frequency, timing, device, network path, and whether Ethernet changes the result."
   },
   {
     "type": "h2",
@@ -304,7 +367,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: isolate the weak link before replacing hardware"
   },
   {
     "type": "h3",

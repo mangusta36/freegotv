@@ -8,9 +8,53 @@
     "text": "This guide explains IPTV from the viewer's side: what the term means, how pictures reach a screen, why live viewing includes delay, and which responsibilities belong to a player versus a provider. It is not an assessment of any particular subscription. The examples describe general technology and hypothetical situations, not measured FreeGoTV performance."
   },
   {
+    "type": "image",
+    "src": "/images/blog/iptv-delivery-chain.webp",
+    "alt": "IPTV delivery chain diagram from source through player to screen",
+    "width": 1200,
+    "height": 675,
+    "caption": "A delivery-chain visual helps separate source, network, player and display responsibilities."
+  },
+  {
     "type": "h2",
     "id": "start-with-the-meaning-of-iptv",
     "text": "Start with the meaning of IPTV"
+  },
+  {
+    "type": "table",
+    "caption": "Use this table to identify which part of the IPTV chain is most likely involved before changing settings.",
+    "headers": [
+      "Stage",
+      "Function",
+      "What the viewer experiences"
+    ],
+    "rows": [
+      [
+        "Source",
+        "Creates or receives the live or on-demand program and prepares it for distribution.",
+        "The channel exists, starts at a certain time, and may have limits before it ever reaches the home."
+      ],
+      [
+        "Encoding and packaging",
+        "Converts video into streamable segments and formats the player can request.",
+        "Quality, delay, captions, audio tracks, and adaptive bitrate behavior are shaped here."
+      ],
+      [
+        "Network delivery",
+        "Moves segments across provider, internet, router, and Wi-Fi paths.",
+        "The viewer may see buffering, slow starts, or quality drops when delivery is unstable."
+      ],
+      [
+        "Player app",
+        "Requests segments, keeps a buffer, decodes media, and displays controls.",
+        "App errors, playlist mistakes, or weak decoding can appear even when the network is healthy."
+      ],
+      [
+        "Display and audio path",
+        "Shows the decoded picture through TV, HDMI, receiver, captions, and audio settings.",
+        "The stream may play while picture mode, HDR, sound, or captions still need adjustment."
+      ]
+    ]
   },
   {
     "type": "p",

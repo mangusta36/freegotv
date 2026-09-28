@@ -8,6 +8,14 @@
     "text": "This guide explains how EPG data, channel mapping, schedules, time zones, and playback relate to one another. It is written for US viewers who want practical understanding before contacting support. It does not claim that every channel has complete data or that any provider can repair every third-party listing. For verified site navigation, use [FreeGoTV](/) and the public [channels page](/channels)."
   },
   {
+    "type": "image",
+    "src": "/images/blog/epg-time-zone-troubleshooting.webp",
+    "alt": "EPG troubleshooting diagram for channel identity guide data clock and time zone",
+    "width": 1200,
+    "height": 675,
+    "caption": "Guide issues often sit beside video playback rather than inside the video stream itself."
+  },
+  {
     "type": "h2",
     "id": "what-an-electronic-program-guide-does",
     "text": "What an electronic program guide does"
@@ -69,6 +77,42 @@
     "type": "h2",
     "id": "time-zones-and-clock-settings",
     "text": "Time zones and clock settings"
+  },
+  {
+    "type": "table",
+    "caption": "EPG symptoms should be checked separately from video playback because guide data can fail independently.",
+    "headers": [
+      "Symptom",
+      "Possible cause",
+      "What to check"
+    ],
+    "rows": [
+      [
+        "Video plays but guide is empty",
+        "Guide feed, app refresh, or channel mapping issue.",
+        "Refresh guide data, check app time settings, and compare another channel category."
+      ],
+      [
+        "Programs appear at the wrong hour",
+        "Device clock, time zone, daylight saving handling, or XMLTV offset.",
+        "Check automatic time, time zone, and whether the app has its own offset setting."
+      ],
+      [
+        "Wrong program on one channel",
+        "Channel identity or regional schedule mismatch.",
+        "Record channel name, displayed program, expected program, time, and region."
+      ],
+      [
+        "Guide works on one device only",
+        "App cache, player support, or device-specific guide handling.",
+        "Compare app version, guide refresh options, and clock settings across devices."
+      ],
+      [
+        "Guide titles are too vague",
+        "Limited metadata depth rather than playback failure.",
+        "Check whether the issue is missing schedule data or simply short descriptions."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -214,11 +258,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "EPG evidence to record"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Write the schedule mismatch clearly"
   },
   {
     "type": "p",
@@ -238,7 +282,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Keep guide reports privacy-safe"
   },
   {
     "type": "p",
@@ -259,11 +303,24 @@
   {
     "type": "h2",
     "id": "final-preflight-check",
-    "text": "Final preflight check"
+    "text": "Check clocks and channel identity before reporting"
   },
   {
     "type": "p",
     "text": "For EPG work, add a small final checklist to your notes: device clock, app time zone, channel display name, expected regional feed, visible program title, and whether the video opens. Then test the same channel after a normal app restart. If the schedule changes, timing or refresh behavior may be involved. If the schedule remains wrong, mapping or source data is more likely. This checklist keeps support focused on guide evidence instead of replaying general network troubleshooting. It also helps you decide whether the issue affects everyday viewing or only a cosmetic part of the interface. A guide problem on one rarely watched channel may be tolerable, while a one-hour offset on a primary sports or news channel may be a subscription decision factor. Treat the guide as part of usability, not merely decoration."
+  },
+  {
+    "type": "h2",
+    "id": "separate-guide-errors-from-content-expectations",
+    "text": "Separate guide errors from content expectations"
+  },
+  {
+    "type": "p",
+    "text": "Not every disappointing guide result is the same kind of problem. A missing program title, a wrong time, a vague description, and an expected channel that is not listed all require different checks. Before reporting the issue, write down what the guide currently shows, what you expected it to show, and why you expected that result. That small distinction helps support decide whether the problem is data freshness, channel identity, regional schedule mapping, or a misunderstanding about available programming."
+  },
+  {
+    "type": "p",
+    "text": "For time-zone issues, include the device time zone and whether automatic time is enabled. For channel identity issues, include the exact channel label as displayed by the app. For missing depth, such as limited episode descriptions, ask whether richer metadata is expected before assuming playback is broken. Guide quality improves fastest when reports describe the guide symptom instead of only saying the service is wrong."
   },
   {
     "type": "h2",
@@ -297,7 +354,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: treat guide data as its own system"
   },
   {
     "type": "h3",

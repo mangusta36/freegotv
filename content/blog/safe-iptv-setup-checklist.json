@@ -8,9 +8,53 @@
     "text": "This checklist is written for viewers using authorized service instructions. It does not invent a FreeGoTV-only application, secret portal, or model-specific procedure. Instead, it gives a practical framework you can use alongside the official setup information for your chosen service. If you are reviewing the public site, the [FreeGoTV](/) homepage is the correct starting point for brand context before you move into installation details."
   },
   {
+    "type": "image",
+    "src": "/images/blog/safe-iptv-setup-checklist.webp",
+    "alt": "Safe IPTV setup checklist diagram with official path credentials network and first stream",
+    "width": 1200,
+    "height": 675,
+    "caption": "Use the visual checklist to keep setup reversible and easy to explain to support."
+  },
+  {
     "type": "h2",
     "id": "prepare-before-installing-anything",
     "text": "Prepare before installing anything"
+  },
+  {
+    "type": "table",
+    "caption": "A safe first setup is reversible: each step should leave a clear note and a known next action.",
+    "headers": [
+      "Step",
+      "What to verify",
+      "Why it matters"
+    ],
+    "rows": [
+      [
+        "Confirm the official path",
+        "Use the provider website, support route, and documented setup instructions.",
+        "It reduces the chance of installing the wrong app or following copied credentials."
+      ],
+      [
+        "Match the device",
+        "Check device category, operating system, app store, and display path.",
+        "A working account still needs a compatible player and practical screen setup."
+      ],
+      [
+        "Protect credentials",
+        "Store activation details privately and avoid sharing passwords or full account screenshots.",
+        "Setup help should not expose sensitive information unnecessarily."
+      ],
+      [
+        "Test one stream first",
+        "Open a normal channel or program and watch long enough to confirm stability.",
+        "A quick launch only proves startup, not household-ready playback."
+      ],
+      [
+        "Record the result",
+        "Note device, app, network path, and any error message.",
+        "The record makes later support or renewal conversations faster and clearer."
+      ]
+    ]
   },
   {
     "type": "h3",
@@ -230,11 +274,11 @@
   {
     "type": "h2",
     "id": "practical-worksheet",
-    "text": "Practical worksheet for this decision"
+    "text": "First-stream setup worksheet"
   },
   {
     "type": "h3",
-    "text": "Write down the evidence before acting"
+    "text": "Capture setup evidence before changing settings"
   },
   {
     "type": "p",
@@ -254,7 +298,7 @@
   },
   {
     "type": "h3",
-    "text": "Keep the worksheet privacy-safe"
+    "text": "Keep setup notes private and useful"
   },
   {
     "type": "p",
@@ -271,6 +315,10 @@
   {
     "type": "p",
     "text": "Finally, connect this worksheet to the rest of your streaming decision. A successful first stream should lead to a repeatable household process, not a one-time lucky launch. If you need broader context, use the installation page, FAQ, and related troubleshooting guides. The best streaming setup is not the one with the most undocumented tweaks; it is the one whose requirements, limits, and recovery steps are understood by the people who use it."
+  },
+  {
+    "type": "p",
+    "text": "If the first setup is happening after a subscription renewal, confirm the account status before changing app settings. The [FreeGoTV renewal payment guide](/blog/how-to-pay-for-freegotv-renewal) explains what to verify with support so setup troubleshooting does not get mixed with a payment or plan question."
   },
   {
     "type": "h2",
@@ -304,7 +352,7 @@
   {
     "type": "h2",
     "id": "conclusion",
-    "text": "Conclusion and next step"
+    "text": "Conclusion: finish with a stable first stream"
   },
   {
     "type": "h3",
