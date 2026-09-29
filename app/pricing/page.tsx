@@ -3,6 +3,7 @@ import { CheckCircle2, MessageCircle } from "lucide-react";
 import { CTASection } from "@/components/CTASection";
 import { HomePricing } from "@/components/HomePricing";
 import { PageHero } from "@/components/PageHero";
+import { brandedHeading } from "@/lib/headings";
 import { createPageMetadata } from "@/lib/metadata";
 import { getWhatsAppUrl, whatsappMessages } from "@/lib/site-config";
 
@@ -41,7 +42,7 @@ export default function PricingPage() {
       <section className="section-space bg-[var(--mist)]">
         <div className="container-page grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
           <div>
-            <h2 className="text-3xl font-black tracking-tight">Need help choosing or renewing?</h2>
+            <h2 className="text-3xl font-black tracking-tight">{brandedHeading("Need help choosing or renewing?")}</h2>
             <p className="mt-3 leading-7 text-zinc-600">If you are unsure which FreeGoTV plan fits your devices or how to renew a FreeGoTV subscription, ask on WhatsApp before paying.</p>
             <a href={getWhatsAppUrl(whatsappMessages.pricing)} className="btn-primary mt-6"><MessageCircle className="h-4 w-4" />Ask on WhatsApp</a>
           </div>

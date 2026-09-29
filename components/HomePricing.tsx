@@ -3,6 +3,7 @@
 import { Check, MonitorSmartphone, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { billingPeriods, connectionOptions, getPlan, planFeatures, type BillingPeriod } from "@/lib/pricing";
+import { brandedHeading } from "@/lib/headings";
 import { getWhatsAppUrl, whatsappMessages } from "@/lib/site-config";
 
 const orderedPeriods: BillingPeriod[] = ["trial", "monthly", "quarterly", "semiannual", "annual"];
@@ -44,7 +45,7 @@ export function HomePricing({
             <MonitorSmartphone className="h-3.5 w-3.5 text-red-300" />
             {eyebrow}
           </span>
-          <h2 className="mt-5 text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-5xl">{title}</h2>
+          <h2 className="mt-5 text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-5xl">{brandedHeading(title)}</h2>
           <p className="mx-auto mt-4 max-w-[21.5rem] text-base leading-7 text-zinc-300 [overflow-wrap:anywhere] sm:max-w-2xl sm:text-lg">
             {description}
           </p>
@@ -96,7 +97,7 @@ export function HomePricing({
                   </span>
                 )}
                 <p className="text-xs font-black uppercase tracking-[0.14em] text-red-200">{connections === 1 ? "1 Device" : `${connections} Devices`}</p>
-                <h3 className="mt-3 text-lg font-black text-white">{periodMeta?.label ?? period}</h3>
+                <h3 className="mt-3 text-lg font-black text-white">{brandedHeading(periodMeta?.label ?? period)}</h3>
                 <p className="mt-1 min-h-5 text-xs font-semibold text-zinc-400">{periodMeta?.detail}</p>
                 <div className="mt-4 flex items-end gap-1">
                   <span className="text-3xl font-black text-white">{plan.price === 0 ? "Free" : `${plan.currencySymbol}${plan.price}`}</span>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ArticleBlock } from "@/lib/blog";
+import { brandedHeading } from "@/lib/headings";
 
 // Deliberately small, trusted-content format: plain text and explicit links only.
 // No raw HTML, scripts, hidden fields or client-side Markdown runtime.
@@ -17,8 +18,8 @@ export function ArticleText({ text }: { text: string }) {
 export function ArticleBody({ blocks }: { blocks: ArticleBlock[] }) {
   return <div data-article-body className="min-w-0 text-base leading-8 text-zinc-700 [overflow-wrap:anywhere] sm:text-lg">
     {blocks.map((block, index) => {
-      if (block.type === "h2") return <h2 key={index} id={block.id} className="mb-5 mt-14 scroll-mt-28 text-2xl font-black leading-tight tracking-tight text-zinc-950 sm:text-3xl">{block.text}</h2>;
-      if (block.type === "h3") return <h3 key={index} id={block.id} className="mb-4 mt-9 scroll-mt-28 text-xl font-bold leading-snug text-zinc-950">{block.text}</h3>;
+      if (block.type === "h2") return <h2 key={index} id={block.id} className="mb-5 mt-14 scroll-mt-28 text-2xl font-black leading-tight tracking-tight text-zinc-950 sm:text-3xl">{brandedHeading(block.text)}</h2>;
+      if (block.type === "h3") return <h3 key={index} id={block.id} className="mb-4 mt-9 scroll-mt-28 text-xl font-bold leading-snug text-zinc-950">{brandedHeading(block.text)}</h3>;
       if (block.type === "ul" || block.type === "ol") {
         const ListTag = block.type;
         return <ListTag key={index} className="mb-7 ml-5 list-outside space-y-3 marker:font-bold marker:text-[var(--primary-dark)]">

@@ -1,5 +1,6 @@
 import { Check, MessageCircle, PlayCircle, ShieldCheck, Sparkles } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
+import { brandedHeading } from "@/lib/headings";
 import { createPageMetadata } from "@/lib/metadata";
 import { getWhatsAppUrl, whatsappMessages } from "@/lib/site-config";
 
@@ -14,14 +15,14 @@ export default function FreeTrialPage() {
     <>
       <PageHero
         eyebrow="NO PAYMENT DETAILS"
-        title={<>Start with a <span className="text-gradient">FreeGoTV Free Trial.</span></>}
+        title={<>Start with a <span className="text-gradient">FreeGoTV IPTV Free Trial.</span></>}
         description="Try the FreeGoTV experience first. We will help you choose a supported device and send clear, authorized setup details."
       />
       <section className="section-space bg-[var(--mist)]">
         <div className="container-page grid gap-10 lg:grid-cols-[.85fr_1.15fr]">
           <div className="lg:pt-5">
             <span className="eyebrow"><PlayCircle className="h-3.5 w-3.5" />TRY FREEGOTV</span>
-            <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">Simple to request. Easy to evaluate.</h2>
+            <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">{brandedHeading("Simple to request. Easy to evaluate.")}</h2>
             <p className="mt-4 leading-7 text-zinc-600">Use the FreeGoTV free trial to check your devices, program guide and the experience that matters to you before choosing a FreeGoTV subscription.</p>
             <ul className="mt-7 space-y-4">{["No payment information required", "Friendly help getting set up", "Compatible device guidance", "Clear, authorized access only"].map((item, index) => {
               const Icons = [ShieldCheck, Sparkles, Check, Check];
@@ -33,7 +34,7 @@ export default function FreeTrialPage() {
             <span className="grid h-12 w-12 place-items-center rounded-2xl bg-green-50 text-green-600">
               <MessageCircle className="h-6 w-6" />
             </span>
-            <h2 className="mt-5 text-2xl font-black">Request your FreeGoTV Free Trial on WhatsApp</h2>
+            <h2 className="mt-5 text-2xl font-black">{brandedHeading("Request your FreeGoTV Free Trial on WhatsApp")}</h2>
             <p className="mt-3 leading-7 text-zinc-600">Send FreeGoTV your device type and any setup questions. Our team will guide you from there.</p>
             <a href={getWhatsAppUrl(whatsappMessages.trial)} className="btn-primary mt-7 w-full">Request free trial</a>
           </div>

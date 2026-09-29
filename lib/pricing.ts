@@ -10,16 +10,24 @@ export const billingPeriods: { id: BillingPeriod; label: string; detail: string 
 
 export const connectionOptions = [1, 2, 3, 4, 5, 6] as const;
 
-const prices: Record<BillingPeriod, number[]> = {
-  trial: [0, 0, 0, 0, 0, 0],
-  monthly: [23, 18, 24, 30, 36, 42],
-  quarterly: [37, 48, 64, 80, 96, 112],
-  semiannual: [47, 87, 116, 145, 174, 203],
-  annual: [67, 156, 208, 260, 312, 364],
+export const basePrices: Record<BillingPeriod, number> = {
+  trial: 0,
+  monthly: 23,
+  quarterly: 37,
+  semiannual: 47,
+  annual: 67,
+};
+
+export const additionalDeviceMultiplier = 1.7;
+
+export const calculatePlanPrice = (period: BillingPeriod, connections: number) => {
+  const basePrice = basePrices[period];
+  if (connections === 1) return basePrice;
+  return Math.round(basePrice * additionalDeviceMultiplier * (connections - 1));
 };
 
 export const getPlan = (period: BillingPeriod, connections: number) => {
-  const price = prices[period][connections - 1];
+  const price = calculatePlanPrice(period, connections);
   const periodText: Record<BillingPeriod, string> = {
     trial: "free trial",
     monthly: "per month",

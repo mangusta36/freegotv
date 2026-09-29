@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Clock3, HelpCircle, MessageCircle, ShieldCheck } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
+import { brandedHeading } from "@/lib/headings";
 import { createPageMetadata } from "@/lib/metadata";
 import { getWhatsAppUrl, siteConfig, whatsappMessages } from "@/lib/site-config";
 
@@ -15,7 +16,7 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="WE ARE HERE TO HELP"
-        title={<>Talk to the <span className="text-gradient">FreeGoTV team.</span></>}
+        title={<>Talk to the <span className="text-gradient">FreeGoTV IPTV team.</span></>}
         description="Use WhatsApp for FreeGoTV plan questions, setup guidance, free trial requests and support."
       />
       <section className="section-space bg-[var(--mist)]">
@@ -24,7 +25,7 @@ export default function ContactPage() {
             <span className="grid h-12 w-12 place-items-center rounded-2xl bg-green-50 text-green-600">
               <MessageCircle className="h-6 w-6" />
             </span>
-            <h2 className="mt-5 text-3xl font-black tracking-tight">Contact FreeGoTV on WhatsApp</h2>
+            <h2 className="mt-5 text-3xl font-black tracking-tight">{brandedHeading("Contact FreeGoTV on WhatsApp")}</h2>
             <p className="mt-3 leading-7 text-zinc-600">
               Tell us what you need help with and include your device type when the question is about setup or playback.
             </p>
@@ -42,7 +43,7 @@ export default function ContactPage() {
                 <span className="grid h-11 w-11 place-items-center rounded-2xl bg-red-50 text-[var(--primary)]">
                   <Icon className="h-5 w-5" />
                 </span>
-                <h3 className="mt-4 font-black">{title}</h3>
+                <h3 className="mt-4 font-black">{brandedHeading(title)}</h3>
                 <p className="mt-2 text-sm leading-6 text-zinc-600">{text}</p>
               </Link>
             ))}

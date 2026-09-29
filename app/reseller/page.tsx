@@ -4,6 +4,7 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { PageHero } from "@/components/PageHero";
 import { ResellerVisual } from "@/components/ResellerVisual";
 import { SectionHeading } from "@/components/SectionHeading";
+import { brandedHeading } from "@/lib/headings";
 import { createPageMetadata } from "@/lib/metadata";
 import { getWhatsAppUrl, whatsappMessages } from "@/lib/site-config";
 
@@ -34,7 +35,7 @@ export default function ResellerPage() {
         <div className="container-page relative grid min-h-[590px] items-center gap-8 py-16 lg:grid-cols-[1.05fr_.95fr]">
           <div>
             <span className="eyebrow border-red-300/20 bg-white/10 text-red-100">FOR AUTHORIZED DISTRIBUTORS</span>
-            <h1 className="mt-5 text-4xl font-black leading-tight tracking-tight sm:text-5xl">FreeGoTV <span className="text-gradient">Reseller Program</span></h1>
+            <h1 className="mt-5 text-4xl font-black leading-tight tracking-tight sm:text-5xl">FreeGoTV IPTV <span className="text-gradient">Reseller Program</span></h1>
             <p className="mt-5 max-w-xl leading-7 text-zinc-300 sm:text-lg">A partner path for qualified distributors who want to discuss authorized FreeGoTV streaming options, customer setup and support expectations.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href={getWhatsAppUrl(whatsappMessages.reseller)} className="btn-primary">Contact Us on WhatsApp</a>
@@ -63,7 +64,7 @@ export default function ResellerPage() {
               <article key={step.title} className="card flex gap-4 p-5">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-red-50 text-sm font-black text-[var(--primary)]">0{index + 1}</span>
                 <div>
-                  <h3 className="font-black">{step.title}</h3>
+                  <h3 className="font-black">{brandedHeading(step.title)}</h3>
                   <p className="mt-1 text-sm leading-6 text-zinc-600">{step.text}</p>
                 </div>
               </article>
@@ -76,7 +77,7 @@ export default function ResellerPage() {
         <div className="grid-glow overflow-hidden rounded-[2rem] bg-zinc-950 px-6 py-12 text-white sm:px-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center lg:gap-8 lg:px-14">
           <div>
             <span className="eyebrow border-red-300/20 bg-white/10 text-red-100"><CheckCircle2 className="h-3.5 w-3.5" />RESELLER OPTIONS</span>
-            <h2 className="mt-4 max-w-xl text-3xl font-black tracking-tight sm:text-4xl">Ask about reseller options.</h2>
+            <h2 className="mt-4 max-w-xl text-3xl font-black tracking-tight sm:text-4xl">{brandedHeading("Ask about reseller options.")}</h2>
             <p className="mt-3 max-w-xl text-zinc-300">Send FreeGoTV your reseller questions on WhatsApp. We will review the next step with you directly.</p>
           </div>
           <div className="mt-7 lg:mt-0">

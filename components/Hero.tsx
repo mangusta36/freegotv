@@ -49,7 +49,7 @@ export function Hero() {
               PREMIUM IPTV STREAMING
             </span>
             <h1 className="mt-6 max-w-[22rem] text-[2.32rem] font-black leading-[1.05] tracking-tight text-white min-[390px]:text-[2.45rem] sm:max-w-none sm:text-5xl lg:text-[4.15rem]">
-              Watch Live TV,
+              FreeGoTV IPTV Live TV,
               <br />
               Sports, Movies
               <br />
