@@ -36,7 +36,18 @@ function wordCount(blocks) {
 }
 
 function linksIn(blocks) {
-  return blocks.flatMap((block) => [...block.text.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((match) => ({ label: match[1], href: match[2] })));
+  return blocks.flatMap((block) => {
+    if (typeof block.text === "string") {
+      return [...block.text.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((match) => ({ label: match[1], href: match[2] }));
+    }
+    if (Array.isArray(block.items)) {
+      return block.items.flatMap((item) => [...item.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((match) => ({ label: match[1], href: match[2] })));
+    }
+    if (Array.isArray(block.rows)) {
+      return block.rows.flatMap((row) => row.flatMap((cell) => [...cell.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((match) => ({ label: match[1], href: match[2] }))));
+    }
+    return [];
+  });
 }
 
 function hasHeading(blocks, pattern) {
@@ -92,7 +103,7 @@ for (const article of entries) {
 
 for (const article of entries) {
   if (!sitemapSource.includes("...articles.map")) fail("Sitemap does not include blog article mapping.");
-  if (!sitemapSource.includes("lastModified: published")) fail("Sitemap does not use article publication dates for blog lastModified.");
+  if (!sitemapSource.includes("lastModified: modified")) fail("Sitemap does not use article modified dates for blog lastModified.");
 }
 
 console.log(`Total meaningful article words: ${totalWords}`);

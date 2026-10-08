@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "FreeGoTV",
-  url: "https://freegotv.eu.cc",
-  supportEmail: "hello@freegotv.eu.cc",
+  url: "https://www.freego4k.com",
+  supportEmail: "hello@freego4k.com",
   whatsappNumber: "212753936672",
   whatsappDisplay: "+212 753 936 672",
   description:

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/lib/site-config";
 
 type PageMetadata = {
   title: string;
@@ -9,15 +10,16 @@ type PageMetadata = {
 
 export function createPageMetadata({ title, description, path, home = false }: PageMetadata): Metadata {
   const socialTitle = home ? title : `${title} | FreeGoTV`;
+  const url = `${siteConfig.url}${path}`;
 
   return {
     title: home ? { absolute: title } : title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: url },
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: path,
+      url,
       title: socialTitle,
       description,
       siteName: "FreeGoTV",
