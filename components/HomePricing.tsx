@@ -14,8 +14,9 @@ type HomePricingProps = {
   description?: string;
 };
 
-function PricingAction({ period }: { period: BillingPeriod }) {
-  const href = period === "trial" ? "/free-trial" : getWhatsAppUrl(whatsappMessages.pricing);
+function PricingAction({ period, label, price, connections }: { period: BillingPeriod; label: string; price: number; connections: number }) {
+  const message = `Hi FreeGoTV, I would like help with the ${label} plan for ${connections} ${connections === 1 ? "device" : "devices"} at $${price}.`;
+  const href = period === "trial" ? "/free-trial" : getWhatsAppUrl(message || whatsappMessages.pricing);
   return (
     <a
       href={href}
@@ -45,7 +46,7 @@ export function HomePricing({
             <MonitorSmartphone className="h-3.5 w-3.5 text-red-300" />
             {eyebrow}
           </span>
-          <h2 className="mt-5 text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-5xl">{brandedHeading(title)}</h2>
+          <h2 className="mx-auto mt-5 max-w-[17rem] text-[clamp(1.65rem,7vw,3rem)] font-black leading-tight tracking-tight [overflow-wrap:anywhere] sm:max-w-3xl sm:text-4xl lg:text-5xl">{brandedHeading(title)}</h2>
           <p className="mx-auto mt-4 max-w-[21.5rem] text-base leading-7 text-zinc-300 [overflow-wrap:anywhere] sm:max-w-2xl sm:text-lg">
             {description}
           </p>
@@ -112,7 +113,7 @@ export function HomePricing({
                     </li>
                   ))}
                 </ul>
-                <PricingAction period={period} />
+                <PricingAction period={period} label={periodMeta?.label ?? period} price={plan.price} connections={connections} />
               </article>
             );
           })}

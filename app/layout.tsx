@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   openGraph: { type: "website", locale: "en_US", url: siteConfig.url, title: "FreeGoTV – Premium IPTV Streaming Plans", description: siteConfig.description, siteName: "FreeGoTV", images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "FreeGoTV premium streaming" }] },
   twitter: { card: "summary_large_image", title: "FreeGoTV – Premium IPTV Streaming Plans", description: siteConfig.description, images: ["/twitter-image"] },
-  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

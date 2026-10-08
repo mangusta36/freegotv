@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BriefcaseBusiness, CheckCircle2, MessageCircle, Settings2, ShieldCheck, UsersRound } from "lucide-react";
 import { CTAButton } from "@/components/CTAButton";
 import { FeatureCard } from "@/components/FeatureCard";
@@ -58,6 +59,7 @@ export default function ResellerPage() {
           <div>
             <SectionHeading eyebrow="HOW IT WORKS" title="Discuss the right reseller path." />
             <p className="mt-4 leading-7 text-zinc-600">The reseller program is handled through direct conversation so FreeGoTV can understand your business, customer needs and support model.</p>
+            <p className="mt-4 leading-7 text-zinc-600">Useful preparation includes the regions you serve, the device types customers ask about, and how you plan to handle setup questions. Review the <Link href="/install" className="font-bold text-[var(--primary-dark)] underline underline-offset-4">installation guidance</Link> and <Link href="/blog/iptv-technology-explained" className="font-bold text-[var(--primary-dark)] underline underline-offset-4">IPTV technology overview</Link> before making claims to customers.</p>
           </div>
           <div className="grid gap-4">
             {steps.map((step, index) => (

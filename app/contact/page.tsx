@@ -29,6 +29,9 @@ export default function ContactPage() {
             <p className="mt-3 leading-7 text-zinc-600">
               Tell us what you need help with and include your device type when the question is about setup or playback.
             </p>
+            <p className="mt-3 leading-7 text-zinc-600">
+              For faster support, describe the plan or trial question, your device category, the app involved, and the exact error message if one appears. Do not send passwords or full payment details in a general support message.
+            </p>
             <a href={getWhatsAppUrl(whatsappMessages.support)} className="btn-primary mt-7 w-full sm:w-fit">Open WhatsApp</a>
             <p className="mt-4 text-sm font-bold text-zinc-500">{siteConfig.whatsappDisplay}</p>
           </div>
@@ -38,6 +41,7 @@ export default function ContactPage() {
               { icon: HelpCircle, title: "Setup help", text: "Review device setup guidance before contacting support.", href: "/install" },
               { icon: MessageCircle, title: "Free trial", text: "Request a FreeGoTV free trial without specifying a duration.", href: "/free-trial" },
               { icon: Clock3, title: "Support details", text: "Response details are shared in direct customer communication.", href: "/faq" },
+              { icon: HelpCircle, title: "Error troubleshooting", text: "Prepare a clear symptom report before changing settings.", href: "/blog/streaming-error-troubleshooting" },
             ].map(({ icon: Icon, title, text, href }) => (
               <Link key={title} href={href} className="card p-5 transition hover:-translate-y-1 hover:border-red-200">
                 <span className="grid h-11 w-11 place-items-center rounded-2xl bg-red-50 text-[var(--primary)]">

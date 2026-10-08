@@ -27,9 +27,9 @@ export default function PricingPage() {
         title={<>FreeGoTV IPTV <span className="text-gradient">Pricing & Plans</span></>}
         description="Compare FreeGoTV subscription options by device count, billing period and renewal needs, then contact the team if you need help choosing."
       >
-        <div className="mt-7 flex flex-wrap gap-4 text-sm text-zinc-300">
-          <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-red-400" />Real prices from FreeGoTV plan data</span>
-          <span className="inline-flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-red-400" />Device-count selector</span>
+        <div className="mt-7 grid gap-3 text-sm text-zinc-300 sm:flex sm:flex-wrap sm:gap-4">
+          <span className="inline-flex min-w-0 items-center gap-2 [overflow-wrap:anywhere]"><CheckCircle2 className="h-4 w-4 shrink-0 text-red-400" />Real prices from FreeGoTV plan data</span>
+          <span className="inline-flex min-w-0 items-center gap-2 [overflow-wrap:anywhere]"><CheckCircle2 className="h-4 w-4 shrink-0 text-red-400" />Device-count selector</span>
         </div>
       </PageHero>
 
@@ -44,6 +44,7 @@ export default function PricingPage() {
           <div>
             <h2 className="text-3xl font-black tracking-tight">{brandedHeading("Need help choosing or renewing?")}</h2>
             <p className="mt-3 leading-7 text-zinc-600">If you are unsure which FreeGoTV plan fits your devices or how to renew a FreeGoTV subscription, ask on WhatsApp before paying.</p>
+            <p className="mt-3 leading-7 text-zinc-600">For a more deliberate comparison, use the <Link href="/blog/evaluate-streaming-service" className="font-bold text-[var(--primary-dark)] underline underline-offset-4">streaming service evaluation guide</Link> to decide which devices, connection limits and support questions matter before choosing a plan.</p>
             <a href={getWhatsAppUrl(whatsappMessages.pricing)} className="btn-primary mt-6"><MessageCircle className="h-4 w-4" />Ask on WhatsApp</a>
           </div>
           <div className="grid gap-4">

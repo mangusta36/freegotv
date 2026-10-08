@@ -37,7 +37,7 @@ export const getPlan = (period: BillingPeriod, connections: number) => {
   };
   return {
     price,
-    currencySymbol: period !== "trial" && connections === 1 ? "$" : "€",
+    currencySymbol: "$",
     periodText: periodText[period],
     name: connections === 1 ? "Solo Stream" : `${connections} Connections`,
     recommended: period === "annual" && connections === 1,

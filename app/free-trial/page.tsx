@@ -1,4 +1,5 @@
 import { Check, MessageCircle, PlayCircle, ShieldCheck, Sparkles } from "lucide-react";
+import Link from "next/link";
 import { PageHero } from "@/components/PageHero";
 import { brandedHeading } from "@/lib/headings";
 import { createPageMetadata } from "@/lib/metadata";
@@ -24,6 +25,7 @@ export default function FreeTrialPage() {
             <span className="eyebrow"><PlayCircle className="h-3.5 w-3.5" />TRY FREEGOTV</span>
             <h2 className="mt-5 text-3xl font-black tracking-tight sm:text-4xl">{brandedHeading("Simple to request. Easy to evaluate.")}</h2>
             <p className="mt-4 leading-7 text-zinc-600">Use the FreeGoTV free trial to check your devices, program guide and the experience that matters to you before choosing a FreeGoTV subscription.</p>
+            <p className="mt-4 leading-7 text-zinc-600">Before requesting access, note the device you want to test, the app or platform you plan to use, and any must-have viewing needs. If you are comparing services, keep a simple <Link href="/blog/evaluate-streaming-service" className="font-bold text-[var(--primary-dark)] underline underline-offset-4">streaming trial checklist</Link> so your decision is based on what actually works for your household.</p>
             <ul className="mt-7 space-y-4">{["No payment information required", "Friendly help getting set up", "Compatible device guidance", "Clear, authorized access only"].map((item, index) => {
               const Icons = [ShieldCheck, Sparkles, Check, Check];
               const Icon = Icons[index];
@@ -36,6 +38,9 @@ export default function FreeTrialPage() {
             </span>
             <h2 className="mt-5 text-2xl font-black">{brandedHeading("Request your FreeGoTV Free Trial on WhatsApp")}</h2>
             <p className="mt-3 leading-7 text-zinc-600">Send FreeGoTV your device type and any setup questions. Our team will guide you from there.</p>
+            <div className="mt-5 rounded-2xl bg-zinc-50 p-4 text-sm leading-6 text-zinc-600">
+              Helpful details include your device category, whether you already have a streaming app installed, and whether you are testing one screen or multiple screens. Do not send passwords, payment details, or private activation links in an opening message.
+            </div>
             <a href={getWhatsAppUrl(whatsappMessages.trial)} className="btn-primary mt-7 w-full">Request free trial</a>
           </div>
         </div>
